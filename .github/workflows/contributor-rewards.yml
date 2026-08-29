@@ -19,8 +19,8 @@
 name: Contributor Rewards
 
 on:
-  pull_request_target:
-    types: [closed, labeled]
+  push:
+    branches: [main]
   issues:
     types: [labeled]
   workflow_dispatch:
