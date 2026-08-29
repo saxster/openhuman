@@ -8,10 +8,8 @@ name: Weekly Code Review
 # Runbook: docs/WEEKLY-CODE-REVIEW.md
 
 on:
-  schedule:
-    # Mondays, 06:00 UTC. Early enough to land before US / EU maintainers
-    # start the week. Override via workflow_dispatch if needed.
-    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
