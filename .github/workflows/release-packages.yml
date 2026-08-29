@@ -11,6 +11,8 @@ name: Release Packages
 # re-introduced — every job below still references `package-cli-tarball.sh`
 # and the `openhuman-core` cargo bin, so they will resume working then.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
