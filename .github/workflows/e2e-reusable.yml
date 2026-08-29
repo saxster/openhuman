@@ -25,6 +25,8 @@
 name: E2E (reusable)
 
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       ref:
