@@ -12,6 +12,8 @@
 # directly from the `vars` context.
 name: Build Desktop (reusable)
 on:
+  push:
+    branches: [main]
   workflow_call:
     inputs:
       build_ref:
